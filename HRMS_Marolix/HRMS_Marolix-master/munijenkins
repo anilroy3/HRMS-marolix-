@@ -1,1 +1,9 @@
-
+pipeline {
+agent any
+stages{
+stage("integration"){
+steps{
+git branch: 'main', url: 'https://github.com/Muniswargangalla/HRMS-marolix-.git'
+}
+}
+}
